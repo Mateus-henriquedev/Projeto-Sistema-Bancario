@@ -1,0 +1,42 @@
+## Arquitetura do Sistema
+
+- O frontend React faz requisicoes HTTP para o backend Java Spring Boot
+- O backend expoe uma API REST para operacoes bancarias
+- O backend se comunica com o banco de dados PostgreSQL para armazenar e recuperar dados
+
+**Organizacao do Backend**
+
+- Controller recebe as requisicoes do frontend
+- Service contem as regras de negocio
+- Repository faz a comunicacao com o banco de dados
+- Model representa as entidades do sistema
+
+**Organizacao do Frontend**
+
+- Componentes para telas e formularios
+- Servicos para comunicacao com a API
+- Contextos para gerenciar estado global
+
+**Fluxo basico**
+
+Usuario acessa o frontend  
+Frontend envia requisicoes para o backend  
+Backend processa as regras de negocio e acessa o banco de dados  
+Backend retorna a resposta para o frontend  
+Frontend exibe as informacoes para o usuario
+
+**Testes**
+
+- Serao implementados testes unitarios para as regras de negocio e 
+  testes de integracao para os endpoints principais
+
+**Escalabilidade**
+
+- O sistema pode ser escalado adicionando mais instancias do backend e do banco
+  de dados conforme a demanda
+
+**Seguranca**
+
+- As senhas dos usuarios serao criptografadas usando bcrypt
+- Autenticacao de usuarios sera feita com JWT token
+- Rotas protegidas exigem autenticacao

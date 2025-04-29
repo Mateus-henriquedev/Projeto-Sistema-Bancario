@@ -1,0 +1,7 @@
+## Stack Tecnológica
+
+- Backend Java Spring Boot
+- Frontend JavaScript, css, react 
+- Banco de Dados PostgreSQL
+
+** Fiz as escolha dessas stacks por serem do meu foco de aprendizado. 

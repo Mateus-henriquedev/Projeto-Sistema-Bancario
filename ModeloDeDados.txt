@@ -1,0 +1,20 @@
+## Modelo de Dados
+
+**Entidades principais**
+
+- Cliente id nome email cpf data de nascimento
+- Conta id tipo saldo cliente id
+- Transacao id tipo valor data conta origem id conta destino id
+- Agencia id nome numero endereco id
+- Comprovante id transacao id arquivo url data
+
+**Relacionamentos**
+
+- Um cliente pode ter varias contas
+- Uma conta pertence a um cliente
+- Uma conta pode ter varias transacoes
+- Uma transacao pode envolver duas contas origem e destino
+- Uma conta pertence a uma agencia
+- Uma agencia pode ter varias contas
+- Comprovante id transacao id arquivo url data
+- Um comprovante pertence a uma transacao

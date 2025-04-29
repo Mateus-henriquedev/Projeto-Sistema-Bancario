@@ -1,0 +1,45 @@
+## Resumo do Projeto
+
+Sistema bancario simples para gerenciar contas, clientes e transacoes financeiras.
+
+## Regras Basicas
+
+- Nao e permitido sacar mais do que o saldo disponivel.
+- Transferencias so podem ser feitas entre contas validas.
+- O usuario deve estar autenticado para realizar operacoes.
+- Nao e permitido transferir valores negativos ou zerados.
+- Nao e permitido depositar valores negativos ou zerados.
+- O saldo inicial de uma conta ao ser criada e sempre zero.
+- Toda transacao (deposito, saque, transferencia) deve ser registrada com data e hora.
+- Nao e permitido transferir para a mesma conta de origem.
+- O CPF do cliente deve ser unico no sistema.
+- O email do cliente deve ser unico no sistema.
+- O sistema deve bloquear a conta apos 5 tentativas de login invalidas consecutivas.
+- Apenas clientes autenticados podem acessar informacooes de suas proprias contas.
+
+
+## Requisitos Nao-Funcionais
+
+- O sistema deve ser seguro (senhas criptografadas).
+- O tempo de resposta das operacoes deve ser inferior a 1 segundo.
+- O sistema deve ser responsivo e funcionar em dispositivos moveis.
+- O sistema deve registrar logs de todas as operacoes sensiveis (login, saque, transferencia).
+- O sistema deve suportar pelo menos 10 usuarios simultaneos sem perda de desempenho.
+
+## Casos de Uso
+
+**Atores:**
+
+- Cliente
+
+**Casos de Uso do Cliente:**
+
+- Fazer login no sistema
+- Visualizar suas contas
+- Realizar deposito em uma conta
+- Realizar saque de uma conta
+- Realizar transferencia entre contas
+- Consultar o extrato da conta
+- Visualizar saldo da conta
+- Alterar senha de acesso
+- Baixar comprovante de transacao 
