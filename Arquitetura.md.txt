@@ -30,11 +30,6 @@ Frontend exibe as informacoes para o usuario
 - Serao implementados testes unitarios para as regras de negocio e 
   testes de integracao para os endpoints principais
 
-**Escalabilidade**
-
-- O sistema pode ser escalado adicionando mais instancias do backend e do banco
-  de dados conforme a demanda
-
 **Seguranca**
 
 - As senhas dos usuarios serao criptografadas usando bcrypt

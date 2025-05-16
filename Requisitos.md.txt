@@ -12,6 +12,7 @@ Sistema bancario simples para gerenciar contas, clientes e transacoes financeira
 - O saldo inicial de uma conta ao ser criada e sempre zero.
 - Toda transacao (deposito, saque, transferencia) deve ser registrada com data e hora.
 - Nao e permitido transferir para a mesma conta de origem.
+- O usuario deve ser maior de 18 anos.
 - O CPF do cliente deve ser unico no sistema.
 - O email do cliente deve ser unico no sistema.
 - O sistema deve bloquear a conta apos 5 tentativas de login invalidas consecutivas.

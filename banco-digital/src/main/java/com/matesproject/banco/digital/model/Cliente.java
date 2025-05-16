@@ -14,7 +14,7 @@ import org.springframework.security.core.annotation.CurrentSecurityContext;
 public class Cliente {
 
     @Id
-    @GeneratedValue(strategy = GeneratedType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id; 
     
     @Column(nullable = false)
@@ -25,5 +25,8 @@ public class Cliente {
 
     @Column(name = "data_nascimento", nullable = false)
     private LocalDate dataNascimento;
+
+    @Column(nullable = false, unique = true, length = 11)
+    private String cpf;
 
 }

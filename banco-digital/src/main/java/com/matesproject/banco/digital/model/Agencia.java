@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class Agencia {
 
     @Id
-    @GeneratedValue(strategy = GeneratedType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id; 
 
     @Column(nullable = false)

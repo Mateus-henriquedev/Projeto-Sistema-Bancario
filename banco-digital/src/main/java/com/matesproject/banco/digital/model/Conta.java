@@ -14,7 +14,7 @@ import org.hibernate.annotations.DialectOverride.GeneratedColumns;
 public class Conta {
 
    @Id 
-   @GeneratedValue(strategy = GeneratedType.IDENTITY)
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
    private long id; 
 
    @Column(nullable = false)
