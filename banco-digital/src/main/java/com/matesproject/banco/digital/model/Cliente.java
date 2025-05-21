@@ -4,7 +4,6 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-import org.springframework.security.core.annotation.CurrentSecurityContext;
 
 @Entity
 @Data
@@ -14,7 +13,7 @@ import org.springframework.security.core.annotation.CurrentSecurityContext;
 public class Cliente {
 
     @Id
-    @GeneratedValue(strategy = GeneratedType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id; 
     
     @Column(nullable = false)
